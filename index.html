@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"  rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container disable">
+        <h2>Easy Image Editor </h2>
+        <div class="wrapper">
+                <div class="editor-panel">
+                    <div class="filter">
+                        <label class="title">Filter</label>
+                        <div class="options">
+                            <button id="brightness" class="active">Brightness</button>
+                            <button id="saturation">Saturation</button>
+                            <button id="invertion">Invertion</button>
+                            <button id="grayscale">Grayscale</button>
+                        </div>
+                        <div class="slider">
+                            <div class="filter-info">
+                                <p class="name">Brightness</p>
+                                <p class="value">100%</p>
+                            </div>
+                            <input type="range" value="100" min="0" max="200">
+                        </div>
+                    </div>
+                    <div class="rotate">
+                        <label class="title">Rotate Y Flip</label>
+                        <div class="options">
+                            <button id="left"><span class="material-icons-sharp">rotate_left </span></button>
+                            <button id="right"><span class="material-icons-sharp">rotate_right</span></button>
+                            <button id="vertical"><span class="material-icons-sharp">swap_vert</span></button>
+                            <button id="horizontal"><span class="material-icons-sharp">sync_alt</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-img">
+                    <img src="./image/image-placeholder.svg" alt="preview-img" srcset="">
+                </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filters</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+        <p>Create by: Jeskarin Martinez</p>
+    </div>
+
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
